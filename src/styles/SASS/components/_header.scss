@@ -1,0 +1,34 @@
+@import '../abstracts/variables';
+
+.header {
+    z-index: 999;
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: clamp(.75rem, 1vw, 10rem);
+    padding: 1rem 0;
+    background-color: $secundary-transparent-background;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    color: white;
+    &__menu {
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+            cursor: pointer;
+        }
+
+        li:hover {
+            transform: scale(1.12);
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .header{
+        padding: 2rem 0;
+    }
+}
