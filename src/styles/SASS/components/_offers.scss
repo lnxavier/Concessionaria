@@ -1,0 +1,120 @@
+@import '../abstracts/variables';
+
+.offers {
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: $secundary-background;
+    margin: 4rem 0;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    &__list {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        .offers__item-container {
+            flex: 0 0 calc(100vw - 4rem);
+            scroll-snap-align: start;
+           
+
+            .offers__item {
+                width: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                 gap: 1rem;
+                padding: 1rem;
+                border-radius: 10px;
+                background-color: $primary-backgroud;
+                
+                &-title {
+                    h3 {
+                        font-size: clamp(1.2rem, 1vw, 3rem);
+                        font-weight: 700;
+                    }
+                    p {
+                        font-size: clamp(0.75rem, 1vw, 1.8rem);
+                        color: $gray-font-color;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+    
+                &-description {
+                    color: $gray-font-color;
+    
+                    &--highlight {
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+    
+                &-price {
+                    color: $btn-color;
+                    font-weight: 700;
+                    font-size: clamp(1.2rem, 1vw, 3rem);
+                }
+    
+                &-btn {
+                    outline: none;
+                    width: 100%;
+                    padding: .5rem 0;
+                    border-radius: 5px;
+                    background-color: $btn-color;
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 480px) {
+    .offers {
+        &__list {
+            gap: 1rem;
+            .offers__item-container {
+                flex: 0 0 calc(50vw - 3rem);
+            }
+        }
+    }
+}
+
+
+@media(min-width: 768px) {
+    .offers {
+        &__list {
+            gap: 1rem;
+            .offers__item-container {
+                flex: 0 0 calc(33.33vw - 2rem);
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+  .offers {
+    padding: 8rem 10rem;
+    gap: 8rem;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+      gap: 4rem;
+      overflow: unset; // remove o scroll horizontal
+      justify-items: center;
+
+      .offers__item-container {
+        flex: unset; // remove o comportamento do carrossel
+        width: 100%; // ocupa o espaço da grid
+      }
+    }
+  }
+}

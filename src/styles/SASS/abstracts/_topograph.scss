@@ -1,0 +1,14 @@
+@import './variables';
+
+body {
+    font-family: $text-font;
+    font-size: clamp(.9rem, 1vw, 1.8rem);
+}
+
+h2 {
+    font-family: $title-font;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    padding: 0 .5rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
+}

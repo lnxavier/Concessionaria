@@ -1,0 +1,15 @@
+.about {
+    margin: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+@media(min-width: 1024px) {
+    .about {
+        margin: 8rem 20rem;
+        gap: 4rem;
+    }
+}
