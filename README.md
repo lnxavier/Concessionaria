@@ -7,7 +7,7 @@ Projeto fictício de uma loja virtual especializada na venda de motos, desenvolv
 ---
 
 ## 🚀 Link do Projeto  
-[👉 Acesse o site publicado aqui](https://seudominio.onrender.com/) <!-- Substitua pela URL real quando publicar -->
+[👉 Acesse o site publicado aqui](https://lx-motors.onrender.com/) <!-- Substitua pela URL real quando publicar -->
 
 ---
 
