@@ -1,4 +1,4 @@
-# 🏍 MotoStore
+# 🏍 LX Motors
 
 Projeto fictício de uma loja virtual especializada na venda de motos, desenvolvido com o objetivo de praticar e aprimorar minhas habilidades em desenvolvimento web, tanto no front-end quanto no back-end.
 
