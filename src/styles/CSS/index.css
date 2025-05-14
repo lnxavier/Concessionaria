@@ -163,6 +163,11 @@ h2 {
 }
 .offers__list .offers__item-container .offers__item img {
   width: 100%;
+  aspect-ratio: 442.66/248.98;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .offers__list .offers__item-container .offers__item-description {
   color: #666872;
