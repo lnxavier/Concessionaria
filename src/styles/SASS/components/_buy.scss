@@ -1,0 +1,64 @@
+@import '../abstracts/variables';
+
+.buy {
+    display: flex;
+    align-items: center;
+    height: 50svh;
+    background-image: url(@/assets/buy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__text {
+        color: white;
+        font-size: clamp(0.75rem, 1vw, 10rem);
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: calc(4em + .3rem);
+        background-color: $transparent-background;
+
+        .buy__title-desktop{
+            display: none;
+            &--highlight {
+                color: $orange-font-color;
+            }
+        }
+
+        p {
+            padding: 0 .5rem;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            line-height: 1em;
+            cursor: pointer;
+        }
+
+        p:hover {
+            font-weight: 700;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .buy {
+        height: 60svh;
+
+        .buy__title {
+            display: none;
+        }
+
+        .buy__title-desktop {
+            display: block;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .buy {
+        height: 70svh;
+    }
+}

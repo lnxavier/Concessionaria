@@ -4,7 +4,6 @@
     overflow-x: hidden;
     width: 100vw;
     background-color: $secundary-background;
-    margin: 4rem 0;
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
@@ -64,16 +63,6 @@
                     color: $btn-color;
                     font-weight: 700;
                     font-size: clamp(1.2rem, 1vw, 3rem);
-                }
-    
-                &-btn {
-                    outline: none;
-                    width: 100%;
-                    padding: .5rem 0;
-                    border-radius: 5px;
-                    background-color: $btn-color;
-                    color: white;
-                    text-align: center;
                 }
             }
         }

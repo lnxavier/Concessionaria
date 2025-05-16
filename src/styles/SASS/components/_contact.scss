@@ -1,0 +1,74 @@
+@import '../abstracts/variables';
+
+.contact {
+    margin: 4rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        input {
+            background-color: $secundary-background;
+            padding: .5rem 0 .5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        label {
+            text-align: center;
+            
+            a {
+                color: $gray-font-color;
+                font-weight: 500;
+            }
+        }
+
+        input:first-child {
+            margin-right: .3rem;
+        }
+
+        button {
+            line-height: 2.5em;
+        }
+
+    }
+
+    &__social-links {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            width: clamp(25px, 1.5vw, 50px);
+            height: auto;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        a:hover {
+            transform: scale(1.12);
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .contact {
+        margin: 8rem 20rem 2rem 20rem;
+
+        form {
+
+            input {
+                padding: 1rem 0 1rem 1rem;
+            }
+        }
+    }
+}

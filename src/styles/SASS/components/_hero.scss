@@ -31,10 +31,13 @@
         }
     }
 
-    img {
+    a {
         position: absolute;
         bottom: 1rem;
         cursor: pointer;
-        width: clamp(80px, 5vw, 150px);
+        
+        img{
+            width: clamp(80px, 5vw, 150px);
+        }
     }
 }

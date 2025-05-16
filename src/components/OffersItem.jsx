@@ -15,7 +15,7 @@ const OffersItem = ({id, name, state, image, year, brand, model, power, price}) 
                     <div className='offers__item-price'>
                         <p>{`R$${price}`}</p>
                     </div>
-                    <button className='offers__item-btn'>Comprar</button>
+                    <button className='btn'>COMPRAR</button>
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 import arrow from '../assets/arrow.gif'
 
 const Hero = () => {
@@ -7,7 +8,9 @@ const Hero = () => {
         <h1>LX MOTORS</h1>
         <h2>Encontre a moto dos seus sonhos</h2>
       </div>
-      <img src={arrow} alt="arrow" />
+      <Link to='about' smooth={true} duration={500}>
+        <img src={arrow} alt="arrow" />
+      </Link>
     </div>
   )
 }
